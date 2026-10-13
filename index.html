@@ -2,13 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=https://jpcmpc123.github.io/My-World-Cinema/">
+  <!-- Meta-refresh NÃO carrega hash/query (limitação); serve só de fallback sem JS.
+       O <script> abaixo preserva #access_token=... e ?query no redirect (login Supabase). -->
+  <meta http-equiv="refresh" content="2; url=https://jpcmpc123.github.io/My-World-Cinema/">
   <link rel="canonical" href="https://jpcmpc123.github.io/My-World-Cinema/">
   <title>Redirecionando para My World Cinema</title>
   <style>body{font-family:sans-serif;background:#14181c;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}a{color:#00e054}</style>
 </head>
 <body>
-  <script>location.replace("https://jpcmpc123.github.io/My-World-Cinema/");</script>
+  <script>location.replace("https://jpcmpc123.github.io/My-World-Cinema/" + location.search + location.hash);</script>
   <p>Redirecionando para <a href="https://jpcmpc123.github.io/My-World-Cinema/">My World Cinema</a>...</p>
 </body>
 </html>
